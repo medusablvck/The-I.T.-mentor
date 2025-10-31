@@ -596,7 +596,7 @@ i {
 .directions-catalog .programmingButton:hover,
 .directions-catalog .analyticsButton:hover,
 .directions-catalog .designButton:hover,
-.directions-catalog .allButton:hover{
+.directions-catalog .allButton:hover {
   background-color: rgb(71 41 98);
   color: #ebf4f9;
 }
