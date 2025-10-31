@@ -157,10 +157,10 @@ button {
   cursor: pointer;
 }
 
-img {
+/* img {
   max-width: 100%;
   display: block;
-}
+} */
 
 i {
   font-style: normal;
@@ -296,7 +296,7 @@ i {
     left: 0;
     width: 16px;  
     height: 16px;
-    background: url("./img/iconArrowNav.svg") no-repeat center;
+    background: url("/img/iconArrowNav.svg") no-repeat center;
     background-size: cover;
   }
 }
@@ -579,9 +579,10 @@ i {
   gap: 16px;
   margin-top: 24px;
 }
-.directions-catalog .slotsButton,
-.directions-catalog .tableButton,
-.directions-catalog .liveButton{
+.directions-catalog .programmingButton,
+.directions-catalog .analyticsButton,
+.directions-catalog .designButton,
+.directions-catalog .allButton{
   border: 2px solid rgb(71 41 98);
   background-color: transparent;
   color: rgb(71 41 98);
@@ -592,9 +593,9 @@ i {
   cursor: pointer;
   transition: 0.8s ease;
 }
-.directions-catalog .slotsButton:hover,
-.directions-catalog .tableButton:hover,
-.directions-catalog .liveButton:hover{
+.directions-catalog .programmingButton:hover,
+.directions-catalog .analyticsButton:hover,
+.directions-catalog .designButton:hover{
   background-color: rgb(71 41 98);
   color: #ebf4f9;
 }
@@ -613,6 +614,19 @@ i {
   background: linear-gradient(135deg, rgba(96, 53, 134, 1) 0%, rgb(130 175 252) 100%, rgb(146 222 252) 100%);
   border-radius: 8px;
   padding: 24px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.directions-catalog-name.hidden {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 .directions-catalog-name p{
   color: #FBFDFC;

@@ -19,11 +19,10 @@ document.querySelectorAll(".faq-item").forEach(item => {
 
 function filterCards(category) {
   cards.forEach(card => {
-    if(category === 'all' || card.getAttribute('data-category') === category)
-    {
-      card.style.display = 'block';
+    if(category === 'all' || card.getAttribute('data-category') === category) {
+      card.classList.remove('hidden');
     } else {
-      card.style.display = 'none';
+      card.classList.add('hidden');
     }
   });
 }
